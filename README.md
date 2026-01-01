@@ -5,19 +5,6 @@ The objective is to reproduce the main empirical results, evaluate the transpare
 
 The project is strictly replicative and methodological in nature.
 
-## Repository Structure
-
-FFM/
-├── data/                     # Raw and processed datasets
-├── original_paper/           # Original study and reference materials
-├── project_instructions/     # Assignment prompt and grading criteria
-├── FFM_DRAFT_11.20.ipynb     # Main replication notebook
-├── section3work.ipynb        # Robustness checks and specification analysis
-├── resultsSOP.csv            # Consolidated replication results
-├── josh_tables/              # Exported tables (report / LaTeX-ready)
-├── table9.png                # Static figure from replication output
-└── README.md
-
 ## Environment & Requirements
 
 The analysis is implemented in Python using Jupyter Notebooks.
