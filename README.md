@@ -1,68 +1,88 @@
-# Five Factor Model — Empirical Replication & Robustness Analysis
+# FFM — Fama-French Five-Factor Model Replication
 
-This repository contains an academic replication of a published empirical study.  
-The objective is to reproduce the main empirical results, evaluate the transparency of the original methodology, and assess robustness to alternative specifications.
+This repository contains a full empirical replication of the **Fama–French Five-Factor Asset Pricing Model**.  
+The project was completed as a final replication and critical analysis assignment for **Economics 430 (UCLA)**, with the objective of reproducing the original results, assessing model implementation choices, and evaluating empirical robustness.
 
-The project is strictly replicative and methodological in nature.
+The Fama–French Five-Factor Model is a cornerstone of modern empirical finance and asset pricing, making this replication directly relevant for research, quantitative finance, and data-driven economic analysis.
 
-## Environment & Requirements
+## Why This Project Matters
 
-The analysis is implemented in Python using Jupyter Notebooks.
+The Fama–French Five-Factor Model is widely used in:
+- empirical asset pricing research
+- portfolio evaluation and risk attribution
+- quantitative finance and investment analysis
+- academic and industry-facing econometric work
 
-- Python ≥ 3.8  
-- Jupyter Notebook or JupyterLab  
-- Required packages:
-  - pandas
-  - numpy
-  - statsmodels
-  - scikit-learn
-  - matplotlib
-  - seaborn
+This project demonstrates:
+- the ability to replicate a canonical empirical model from the literature
+- proficiency with real-world financial datasets
+- disciplined econometric workflow (data cleaning, estimation, diagnostics, robustness)
+- critical evaluation of published empirical results
 
-Install dependencies:
+These skills are directly applicable to research assistant roles, quantitative analyst positions, and data-focused economics or finance roles.
 
-pip install pandas numpy statsmodels scikit-learn matplotlib seaborn
-Using a virtual environment is recommended for reproducibility.
+## How to Navigate This Repository
 
-## Reproducing the Results
+The repository is organized to mirror a standard academic replication workflow.  
+Each folder and file corresponds to a specific stage of the replication process.
 
-1. Clone the repository:
+FFM/
+├── data/                     # Raw and processed factor/portfolio datasets
+├── original_paper/           # Fama-French paper and reference materials
+├── project_instructions/     # Assignment description and grading criteria
+├── FFM_DRAFT_11.20.ipynb     # Main replication notebook
+├── section3work.ipynb        # Robustness checks and additional analysis
+├── resultsSOP.csv            # Consolidated replication results
+├── josh_tables/              # Exported regression tables (report / LaTeX-ready)
+├── table9.png                # Static figure reproducing a key table/result
+└── README.md
 
-git clone https://github.com/ignaciomacan/FFM.git
-cd FFM
+## Folder and File Descriptions
 
-2. Launch Jupyter:
+**data/**  
+Contains all raw and processed datasets used in the replication, including factor returns and portfolio-level data. Any data cleaning and transformations used for estimation originate from this directory.
 
-jupyter notebook
+**original_paper/**  
+Holds the original Fama–French Five-Factor Model paper and supporting reference material used to guide replication decisions.
 
-3. Run notebooks in order:
-- `FFM_DRAFT_11.20.ipynb`: core replication of the original results  
-- `section3work.ipynb`: robustness checks and alternative specifications  
+**project_instructions/**  
+Contains the original assignment prompt and grading rubric, outlining replication requirements, robustness checks, and evaluation criteria :contentReference[oaicite:0]{index=0}.
 
-Ensure all file paths correctly reference the `data/` directory.
+**FFM_DRAFT_11.20.ipynb**  
+Primary replication notebook. Implements the core five-factor regressions, reproduces key tables, and documents methodological choices.
 
-## Outputs
+**section3work.ipynb**  
+Focused notebook for robustness checks, alternative specifications, and diagnostic analysis beyond the baseline model.
 
-- `resultsSOP.csv`: consolidated numerical replication results  
-- `josh_tables/`: formatted tables for reporting or LaTeX integration  
-- `table9.png`: static figure illustrating a key replicated result
+**resultsSOP.csv**  
+Structured output of the main regression results for easy comparison, reporting, or downstream analysis.
 
-## Methodological Notes
+**josh_tables/**  
+Contains formatted regression tables suitable for inclusion in written reports or LaTeX documents.
 
-The replication prioritizes exact reconstruction of the original regressions, explicit documentation of data transformations, and systematic sensitivity analysis. Any undocumented implementation choices or deviations are noted directly in the notebooks.
+**table9.png**  
+Static visualization reproducing a key result from the original paper.
 
-## Limitations
 
-Some methodological decisions in the original study are not fully documented. Minor numerical discrepancies may arise due to software versions, rounding conventions, or data handling assumptions. Results should be interpreted strictly as a replication exercise.
+## Replicated Model
 
-## Citation
+This project replicates the **Fama–French Five-Factor Model**, which extends the traditional three-factor model by incorporating:
+- market excess returns
+- size (SMB)
+- value (HML)
+- profitability (RMW)
+- investment (CMA)
 
-If referencing this repository:
+The replication evaluates whether these factors jointly explain cross-sectional variation in asset returns, consistent with the original findings.
 
-Macan, Ignacio (2025).  
-FFM: Empirical Replication and Robustness Analysis.  
-GitHub repository: https://github.com/ignaciomacan/FFM
 
-## Contact
+## Notes on Interpretation
 
-Use GitHub Issues for questions, corrections, or replication feedback.
+This repository is intended as:
+- an academic replication exercise
+- a demonstration of applied econometric and financial modeling skills
+- a transparent, reproducible reference for professional review
+
+Results should be interpreted as a replication and methodological assessment, not as a modification or extension of the original Fama–French framework.
+
+
