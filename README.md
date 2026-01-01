@@ -1,4 +1,4 @@
-# FFM — Empirical Replication & Robustness Analysis
+# Five Factor Model — Empirical Replication & Robustness Analysis
 
 This repository contains an academic replication of a published empirical study.  
 The objective is to reproduce the main empirical results, evaluate the transparency of the original methodology, and assess robustness to alternative specifications.
